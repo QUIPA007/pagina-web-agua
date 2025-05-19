@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Consumo de Agua - Estudio de Caso</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 25px;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #2980b9;
+      color: white;
+    }
+    .resumen, .explicacion {
+      background-color: #ecf0f1;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Estudio de Caso: Análisis del Consumo de Agua</h1>
+
+  <div class="resumen">
+    <h2>Contexto</h2>
+    <p>Se registró el consumo diario de agua en una planta de producción durante 10 días para analizar tendencias y consumo total.</p>
+    <p>Objetivos:</p>
+    <ul>
+      <li>Calcular la <strong>tasa de cambio del consumo</strong> (derivadas finitas).</li>
+      <li>Estimar el <strong>consumo total acumulado</strong> (integración numérica).</li>
+    </ul>
+  </div>
+
+  <h2>Datos de Consumo Diario</h2>
+  <table>
+    <tr>
+      <th>Día</th>
+      <th>Consumo (litros)</th>
+    </tr>
+    <tr><td>1</td><td>980</td></tr>
+    <tr><td>2</td><td>1000</td></tr>
+    <tr><td>3</td><td>1025</td></tr>
+    <tr><td>4</td><td>1010</td></tr>
+    <tr><td>5</td><td>1050</td></tr>
+    <tr><td>6</td><td>1075</td></tr>
+    <tr><td>7</td><td>1100</td></tr>
+    <tr><td>8</td><td>1120</td></tr>
+    <tr><td>9</td><td>1110</td></tr>
+    <tr><td>10</td><td>1150</td></tr>
+  </table>
+
+  <div class="explicacion">
+    <h2>Derivadas Finitas (Tasa de Cambio)</h2>
+    <p>Se aplicó el método de diferencias centradas:</p>
+    <p><code>f'(t) ≈ (f(t+1) - f(t-1)) / 2</code></p>
+    <p>Ejemplo para el día 5:</p>
+    <p><strong>f'(5) = (1075 - 1010) / 2 = 32.5 litros/día</strong></p>
+  </div>
+
+  <div class="explicacion">
+    <h2>Integración Numérica (Regla del Trapecio)</h2>
+    <p>Se aplicó la fórmula:</p>
+    <p><code>Integral ≈ (h/2) * [C₁ + 2(C₂ + ... + C₉) + C₁₀]</code></p>
+    <p>Resultado: <strong>9545 litros consumidos en total</strong> durante los 10 días.</p>
+  </div>
+
+  <h2>Video Explicativo</h2>
+  <p>Incluye tu video aquí:</p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ID_DEL_VIDEO" frameborder="0" allowfullscreen></iframe>
+
+  <h2>Conclusión</h2>
+  <p>El análisis permitió identificar picos de consumo y estimar el gasto total. Este tipo de monitoreo es clave en la ingeniería industrial para tomar decisiones basadas en datos.</p>
+
+</body>
+</html>
